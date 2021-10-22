@@ -207,16 +207,11 @@ fill: currentColor;
 }
 
 .hero-button {
-
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.9;
 
     display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
 
     background: #2196F3;
@@ -243,10 +238,10 @@ fill: currentColor;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
     opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+    pointer-events: none; */
+    /* visibility: hidden; */
 }
 
 .backdrop.is-hidden .modal {
@@ -686,6 +681,7 @@ fill: currentColor;
 
 .join {
     margin-top: 12px;
+    margin-right: 93px;
     fill: var(--primary-title-color);
 }
 
@@ -726,4 +722,75 @@ margin-right: 10px;
 
 .join-icon {
     fill: var(--header-background-color);
+}
+   
+.subscribe {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 12px;
+    margin-left: 0;
+    margin-bottom: 94px;
+    width: 570px;
+}
+
+.subscribe .subscribe-button {
+    align-items: center;
+}
+
+.subscribe-email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.subscribe-email label {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+    margin-bottom: 20px;
+}
+
+.subscribe-email input {
+    margin: 0;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+    color: rgba(255, 255, 255, 0.6);;
+}
+
+.subscribe-email input::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-button {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    padding: 10px 29px;
+    margin-left: 12px;
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-width: 0;
+    border-radius: 4px;
+    color: var(--header-background-color);
+
+    cursor: pointer;
+}
+
+.subscribe-icon {
+    margin-left: 10px;
 }
