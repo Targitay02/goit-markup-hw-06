@@ -329,29 +329,34 @@
             <button data-modal-close class="close-button" type="button">
                 <svg class="close-button-icon" width="11" height="11"><use href="./images/sprite.svg#icon-vector-button"></use></svg>
             </button>
-            <p>Оставьте свои данные, мы вам перезвоним</p>
-            <form>
-                <div>
-                    <label for="name">Имя</label>
-                    <input type="text" id="name">
+
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+            <form class="form-modal">
+                <div class="form-field">
+                    <label for="name" class="label">Имя</label>
+                    <input type="text" id="name" class="input">
+                    <svg class="form-field-icon" width="18" height="18"><use href="./images/sprite.svg#icon-person-black"></use></svg>
                 </div>
-                <div>
-                    <label for="tel" >Телефон</label>
-                    <input type="tel" id="tel">
+                <div class="form-field">
+                    <label for="tel" class="label">Телефон</label>
+                    <input type="tel" id="tel" class="input">
+                    <svg class="form-field-icon" width="18" height="18"><use href="./images/sprite.svg#icon-phone-black"></use></svg>
                 </div>
-                <div>
-                    <label for="email" >Почта</label>
-                    <input type="email" id="email">
+                <div class="form-field">
+                    <label for="email" class="label">Почта</label>
+                    <input type="email" id="email" class="input">
+                    <svg class="form-field-icon" width="18" height="18"><use href="./images/sprite.svg#icon-email-black"></use></svg>
                 </div>
-                <div>
-                    <label for="comment">Комментарий</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+
+                <div class="textarea-field">
+                    <label for="comment" class="label">Комментарий</label>
+                    <textarea name="comment" id="comment" rows="5" placeholder="Введите текст" class="textarea"></textarea>
                 </div>
-                <div>
-                    <input type="checkbox" name="agreement" id="agreement">
-                    <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="" class="">Условия договора</a></label>
-                </div>
-                <button type="submit">Отправить</button>
+                    <input  class="checkbox visually-hidden" type="checkbox" name="agreement" id="agreement" value="agreement">
+                    <label for="agreement" class="checkbox-text"><span><svg class="checkbox-icon" width="11" height="8"><use href="./images/sprite.svg#icon-checkbox"></use></svg></span> Соглашаюсь с рассылкой и принимаю <a href="" class="">Условия договора</a></label>
+
+                <button type="submit" class="send-button">Отправить</button>
 
             </form>
         </div>
