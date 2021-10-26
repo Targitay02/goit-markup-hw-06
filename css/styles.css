@@ -882,12 +882,8 @@ margin-right: 10px;
     align-items: flex-end;
     margin-top: 12px;
     margin-left: 0;
-    margin-bottom: 94px;
     width: 570px;
-}
-
-.subscribe .subscribe-button {
-    align-items: center;
+    height: 86px;
 }
 
 .subscribe-email {
@@ -907,6 +903,7 @@ margin-right: 10px;
 
 .subscribe-email input {
     margin: 0;
+    height: 50px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -926,6 +923,7 @@ margin-right: 10px;
 
 .subscribe-button {
     display: flex;
+    align-items: center;
     width: 200px;
     height: 50px;
     padding: 10px 29px;
